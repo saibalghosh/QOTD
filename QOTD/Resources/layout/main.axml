@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:minWidth="25px"
+    android:minHeight="25px"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+    android:layout_height="fill_parent"
+    android:background="@drawable/GradientBackground"
+    android:id="@+id/relativeLayoutMain">
+<!-- <ImageButton
+        android:id="@+id/InfoButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:minWidth="32dp"
+        android:minHeight="32dp"
+        android:maxWidth="32dp"
+        android:maxHeight="32dp"
+        android:src="@drawable/info"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" /> -->
     <LinearLayout
         android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/main_content"
-        android:background="@android:color/black"
-        android:layout_below="@id/toolbar">
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutAphorism"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:src="@android:drawable/star_off"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPersona"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:text="Retrieving..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtAphorism"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_horizontal"
+            android:typeface="sans" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtPersona"
+            android:textStyle="normal"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutCopyright"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInstructions"
+            android:gravity="center_horizontal"
+            android:text="Tap anywhere to refresh"
+            android:textSize="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCopyright"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:text="@string/copyright"
+            android:textSize="9dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:linksClickable="true" />
     </LinearLayout>
 </RelativeLayout>

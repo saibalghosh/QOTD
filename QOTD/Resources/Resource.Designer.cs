@@ -1367,10 +1367,16 @@ namespace QOTD
 			public const int abc_textfield_search_material = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int Icon = 2130837563;
+			public const int GradientBackground = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int notification_template_icon_bg = 2130837564;
+			public const int Icon = 2130837564;
+			
+			// aapt resource value: 0x7f02003d
+			public const int info = 2130837565;
+			
+			// aapt resource value: 0x7f02003e
+			public const int notification_template_icon_bg = 2130837566;
 			
 			static Drawable()
 			{
@@ -1385,8 +1391,8 @@ namespace QOTD
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0051
-			public const int action0 = 2131427409;
+			// aapt resource value: 0x7f0b0057
+			public const int action0 = 2131427415;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int action_bar = 2131427392;
@@ -1412,8 +1418,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0041
 			public const int action_context_bar = 2131427393;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int action_divider = 2131427413;
+			// aapt resource value: 0x7f0b005b
+			public const int action_divider = 2131427419;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1445,14 +1451,14 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0036
 			public const int buttonPanel = 2131427382;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int cancel_action = 2131427410;
+			// aapt resource value: 0x7f0b0058
+			public const int cancel_action = 2131427416;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int checkbox = 2131427384;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int chronometer = 2131427416;
+			// aapt resource value: 0x7f0b005e
+			public const int chronometer = 2131427422;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int collapseActionView = 2131427351;
@@ -1487,8 +1493,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0014
 			public const int end = 2131427348;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int end_padder = 2131427421;
+			// aapt resource value: 0x7f0b0063
+			public const int end_padder = 2131427427;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int expand_activities_button = 2131427367;
@@ -1511,14 +1517,23 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0028
 			public const int image = 2131427368;
 			
+			// aapt resource value: 0x7f0b0051
+			public const int imgPersona = 2131427409;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int info = 2131427426;
+			
 			// aapt resource value: 0x7f0b005c
-			public const int info = 2131427420;
+			public const int line1 = 2131427420;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int line1 = 2131427414;
+			// aapt resource value: 0x7f0b0060
+			public const int line3 = 2131427424;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int line3 = 2131427418;
+			// aapt resource value: 0x7f0b0050
+			public const int linearLayoutAphorism = 2131427408;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int linearLayoutCopyright = 2131427412;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1526,11 +1541,11 @@ namespace QOTD
 			// aapt resource value: 0x7f0b002a
 			public const int list_item = 2131427370;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int main_content = 2131427408;
+			// aapt resource value: 0x7f0b0065
+			public const int main_content = 2131427429;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int media_actions = 2131427412;
+			// aapt resource value: 0x7f0b005a
+			public const int media_actions = 2131427418;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int middle = 2131427349;
@@ -1558,6 +1573,9 @@ namespace QOTD
 			
 			// aapt resource value: 0x7f0b003a
 			public const int radio = 2131427386;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int relativeLayoutMain = 2131427407;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int screen = 2131427359;
@@ -1622,8 +1640,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0022
 			public const int src_over = 2131427362;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int status_bar_latest_event_content = 2131427411;
+			// aapt resource value: 0x7f0b0059
+			public const int status_bar_latest_event_content = 2131427417;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int submit_area = 2131427403;
@@ -1631,20 +1649,26 @@ namespace QOTD
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int text = 2131427419;
+			// aapt resource value: 0x7f0b0061
+			public const int text = 2131427425;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int text2 = 2131427417;
+			// aapt resource value: 0x7f0b005f
+			public const int text2 = 2131427423;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int textCopyright = 2131427414;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int textInstructions = 2131427413;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int textSpacerNoButtons = 2131427379;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int textView1 = 2131427422;
+			// aapt resource value: 0x7f0b0066
+			public const int textView1 = 2131427430;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int time = 2131427415;
+			// aapt resource value: 0x7f0b005d
+			public const int time = 2131427421;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int title = 2131427372;
@@ -1652,11 +1676,17 @@ namespace QOTD
 			// aapt resource value: 0x7f0b002f
 			public const int title_template = 2131427375;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int toolbar = 2131427407;
+			// aapt resource value: 0x7f0b0064
+			public const int toolbar = 2131427428;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int topPanel = 2131427374;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int txtAphorism = 2131427410;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int txtPersona = 2131427411;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -1906,6 +1936,9 @@ namespace QOTD
 			
 			// aapt resource value: 0x7f050010
 			public const int abc_toolbar_collapse_description = 2131034128;
+			
+			// aapt resource value: 0x7f050015
+			public const int copyright = 2131034133;
 			
 			// aapt resource value: 0x7f050011
 			public const int status_bar_notification_info_overflow = 2131034129;

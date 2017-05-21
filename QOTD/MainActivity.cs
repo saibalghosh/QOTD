@@ -21,8 +21,8 @@ namespace QOTD
         {
             base.OnCreate(bundle);
 
-            SupportActionBar.SetDisplayHomeAsUpEnabled(false);
-            SupportActionBar.SetHomeButtonEnabled(false);
+            //SupportActionBar.SetDisplayHomeAsUpEnabled(false);
+            //SupportActionBar.SetHomeButtonEnabled(false);
         }
     }
 }
