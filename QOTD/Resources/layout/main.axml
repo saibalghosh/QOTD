@@ -30,10 +30,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imgPersona"
-            android:minWidth="100dp"
-            android:minHeight="100dp"
-            android:maxWidth="100dp"
-            android:maxHeight="100dp"
+            android:minWidth="256dp"
+            android:minHeight="256dp"
+            android:maxWidth="256dp"
+            android:maxHeight="256dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />
         <TextView
@@ -48,7 +48,8 @@
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
             android:gravity="center_horizontal"
-            android:typeface="sans" />
+            android:typeface="sans"
+            android:textColor="@android:color/white" />
         <TextView
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="fill_parent"
@@ -60,7 +61,9 @@
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
@@ -79,7 +82,8 @@
             android:text="Tap anywhere to refresh"
             android:textSize="10dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/white" />
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -90,6 +94,7 @@
             android:textSize="9dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:linksClickable="true" />
+            android:linksClickable="true"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>

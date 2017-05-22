@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://qotdservice.azurewebsites.net/RandomQuotation.svc?wsdl" filename="RandomQuotation.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qotdservice.azurewebsites.net/RandomQuotation.svc?xsd=xsd2" filename="RandomQuotation.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://qotdservice.azurewebsites.net/RandomQuotation.svc?disco" filename="RandomQuotation.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qotdservice.azurewebsites.net/RandomQuotation.svc?xsd=xsd1" filename="RandomQuotation0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qotdservice.azurewebsites.net/RandomQuotation.svc?xsd=xsd0" filename="RandomQuotation1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

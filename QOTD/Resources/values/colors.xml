@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <!--Get colors from: http://www.materialpalette.com/-->
-  <color name="primary">#000000</color>
-  <color name="primaryDark">#000000</color>
+  <color name="primary">#FFFFFF</color>
+  <color name="primaryDark">#FFFFFF</color>
   <color name="accent">#FFFFFF</color>
-  <color name="lightPrimary">#000000</color>
+  <color name="lightPrimary">#FFFFFF</color>
   <color name="textIcon">#FFFFFF</color>
   <color name="primaryText">#FFFFFF</color>
   <color name="secondaryText">#FFFFFF</color>
