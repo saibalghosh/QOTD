@@ -75,6 +75,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Cinzel-Regular.ttf" />
+    <AndroidAsset Include="Assets\fonts\OpenSans-Regular.ttf" />
+    <AndroidAsset Include="Assets\fonts\Tangerine_Regular.ttf" />
+    <AndroidAsset Include="Assets\fonts\Italianno-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

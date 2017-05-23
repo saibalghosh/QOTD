@@ -9,6 +9,7 @@ using Android.Graphics;
 using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Net.Http;
+using Android.Net;
 
 namespace QOTD
 {
@@ -33,8 +34,10 @@ namespace QOTD
             RelativeLayout layoutTouch = FindViewById<RelativeLayout>(Resource.Id.relativeLayoutMain);
             layoutTouch.SetOnTouchListener (this);
 
+            SetupTypefaces();
+
             InitializeQOTDServiceClient();
-            serviceRef.GetRandomQuotationAsync();
+            GetRandomQuotation();
         }
 
         public bool OnTouch(View v, MotionEvent e)
@@ -42,11 +45,55 @@ namespace QOTD
             switch (e.Action)
             {
                 case MotionEventActions.Down:
-                    serviceRef.GetRandomQuotationAsync();
+                    GetRandomQuotation();
                     break;
             }
 
             return true;
+        }
+
+        private void SetupTypefaces()
+        {
+            var txtPerson = FindViewById<TextView>(Resource.Id.txtPersona);
+            var txtQuotation = FindViewById<TextView>(Resource.Id.txtAphorism);
+            var txtCopyright = FindViewById<TextView>(Resource.Id.textCopyright);
+            var txtInstructions = FindViewById<TextView>(Resource.Id.textInstructions);
+            txtQuotation.MovementMethod = new Android.Text.Method.ScrollingMovementMethod();
+
+            Typeface aphorismTypeface = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/Tangerine_Regular.ttf");
+            Typeface personaTypeface = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/Cinzel-Regular.ttf");
+            Typeface copyrightTypeface = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/OpenSans-Regular.ttf");
+            Typeface instructionsTypeface = Typeface.CreateFromAsset(Application.Context.Assets, "fonts/OpenSans-Regular.ttf");
+            txtQuotation.SetTextSize(Android.Util.ComplexUnitType.Dip, 30);
+            txtQuotation.SetTypeface(aphorismTypeface, TypefaceStyle.Normal);
+            txtPerson.SetTypeface(personaTypeface, TypefaceStyle.Bold);
+            txtCopyright.SetTypeface(copyrightTypeface, TypefaceStyle.Normal);
+            txtInstructions.SetTypeface(instructionsTypeface, TypefaceStyle.Normal);
+        }
+
+        private void GetRandomQuotation()
+        {
+            RunOnUiThread(() => FindViewById<ImageView>(Resource.Id.imgPersona).Visibility = ViewStates.Invisible);
+            
+
+            var connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
+            var activeConnection = connectivityManager.ActiveNetworkInfo;
+
+            if ((activeConnection != null) && activeConnection.IsConnected)
+            {
+                RunOnUiThread(() => FindViewById<TextView>(Resource.Id.txtAphorism).Text = "Retrieving...");
+                RunOnUiThread(() => FindViewById<TextView>(Resource.Id.txtPersona).Text = "");
+
+                serviceRef.GetRandomQuotationAsync();
+            }
+            else
+            {
+                RunOnUiThread(() => FindViewById<TextView>(Resource.Id.txtAphorism).Text = "");
+                RunOnUiThread(() => FindViewById<TextView>(Resource.Id.txtPersona).Text = "");
+                RunOnUiThread(() => FindViewById<ImageView>(Resource.Id.imgPersona).Visibility = ViewStates.Invisible);
+
+                RunOnUiThread(() => Toast.MakeText(this, "No Network connectivity available. Connect to a network and tap anywhere to continue...", ToastLength.Long).Show());
+            }
         }
 
         private void InitializeQOTDServiceClient()
@@ -61,6 +108,7 @@ namespace QOTD
 
             catch
             {
+                RunOnUiThread(() => Toast.MakeText(this, "Failed to establish a network connection. Please try again...", ToastLength.Long).Show());
                 return;
             }
         }
@@ -69,10 +117,12 @@ namespace QOTD
         {
             if (e.Error != null)
             {
+                RunOnUiThread(() => Toast.MakeText(this, "There was an error retrieving the data. Please try again...", ToastLength.Long).Show());
                 return;
             }
             else if (e.Cancelled)
             {
+                RunOnUiThread(() => Toast.MakeText(this, "The retrieval operation was cancelled  by the user", ToastLength.Long).Show());
                 return;
             }
 
