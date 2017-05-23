@@ -17,7 +17,7 @@ using System.IO;
 
 namespace QOTD
 {
-    [Activity(MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Icon = "@drawable/icon")]
     public class MainActivity : BaseActivity, View.IOnTouchListener
     {
         View licenseDetails;

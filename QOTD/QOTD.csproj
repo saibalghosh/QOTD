@@ -68,6 +68,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
     <Compile Include="Web References\QOTDService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

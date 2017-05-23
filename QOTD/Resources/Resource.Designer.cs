@@ -2736,6 +2736,9 @@ namespace QOTD
 			// aapt resource value: 0x7f0700dd
 			public const int Theme_AppCompat_NoActionBar = 2131165405;
 			
+			// aapt resource value: 0x7f070127
+			public const int Theme_Splash = 2131165479;
+			
 			// aapt resource value: 0x7f0700de
 			public const int ThemeOverlay_AppCompat = 2131165406;
 			
