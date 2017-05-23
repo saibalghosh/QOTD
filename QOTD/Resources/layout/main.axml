@@ -79,10 +79,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/textInstructions"
             android:gravity="center_horizontal"
-            android:text="Tap anywhere to refresh"
+            android:text="@string/refresh"
             android:textSize="10dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:textColor="@android:color/white" />
         <TextView
             android:layout_width="fill_parent"
@@ -92,7 +91,6 @@
             android:gravity="center_horizontal"
             android:text="@string/copyright"
             android:textSize="9dp"
-            android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:linksClickable="true"
             android:textColor="@android:color/white" />

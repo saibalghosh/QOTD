@@ -1877,14 +1877,8 @@ namespace QOTD
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050014
-			public const int ApplicationName = 2131034132;
-			
 			// aapt resource value: 0x7f050012
-			public const int Hello = 2131034130;
-			
-			// aapt resource value: 0x7f050013
-			public const int Navigation = 2131034131;
+			public const int ApplicationName = 2131034130;
 			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;
@@ -1937,8 +1931,11 @@ namespace QOTD
 			// aapt resource value: 0x7f050010
 			public const int abc_toolbar_collapse_description = 2131034128;
 			
-			// aapt resource value: 0x7f050015
-			public const int copyright = 2131034133;
+			// aapt resource value: 0x7f050014
+			public const int copyright = 2131034132;
+			
+			// aapt resource value: 0x7f050013
+			public const int refresh = 2131034131;
 			
 			// aapt resource value: 0x7f050011
 			public const int status_bar_notification_info_overflow = 2131034129;
