@@ -1367,16 +1367,22 @@ namespace QOTD
 			public const int abc_textfield_search_material = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int GradientBackground = 2130837563;
+			public const int azure = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int Icon = 2130837564;
+			public const int GradientBackground = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int info = 2130837565;
+			public const int Icon = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int notification_template_icon_bg = 2130837566;
+			public const int info = 2130837566;
+			
+			// aapt resource value: 0x7f020040
+			public const int notification_template_icon_bg = 2130837568;
+			
+			// aapt resource value: 0x7f02003f
+			public const int transparent = 2130837567;
 			
 			static Drawable()
 			{
@@ -1391,8 +1397,8 @@ namespace QOTD
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0057
-			public const int action0 = 2131427415;
+			// aapt resource value: 0x7f0b006c
+			public const int action0 = 2131427436;
 			
 			// aapt resource value: 0x7f0b0040
 			public const int action_bar = 2131427392;
@@ -1418,8 +1424,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0041
 			public const int action_context_bar = 2131427393;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int action_divider = 2131427419;
+			// aapt resource value: 0x7f0b0070
+			public const int action_divider = 2131427440;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1448,17 +1454,20 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0013
 			public const int beginning = 2131427347;
 			
+			// aapt resource value: 0x7f0b005e
+			public const int btnAboutLicenses = 2131427422;
+			
 			// aapt resource value: 0x7f0b0036
 			public const int buttonPanel = 2131427382;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int cancel_action = 2131427416;
+			// aapt resource value: 0x7f0b006d
+			public const int cancel_action = 2131427437;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int checkbox = 2131427384;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int chronometer = 2131427422;
+			// aapt resource value: 0x7f0b0073
+			public const int chronometer = 2131427443;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int collapseActionView = 2131427351;
@@ -1493,8 +1502,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0014
 			public const int end = 2131427348;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int end_padder = 2131427427;
+			// aapt resource value: 0x7f0b0078
+			public const int end_padder = 2131427448;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int expand_activities_button = 2131427367;
@@ -1518,22 +1527,43 @@ namespace QOTD
 			public const int image = 2131427368;
 			
 			// aapt resource value: 0x7f0b0051
-			public const int imgPersona = 2131427409;
+			public const int imgAbout = 2131427409;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int info = 2131427426;
+			// aapt resource value: 0x7f0b0066
+			public const int imgPersona = 2131427430;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int line1 = 2131427420;
+			// aapt resource value: 0x7f0b0077
+			public const int info = 2131427447;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int infoButton = 2131427428;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int layoutAbout = 2131427407;
 			
 			// aapt resource value: 0x7f0b0060
-			public const int line3 = 2131427424;
+			public const int layoutLicenseDetails = 2131427424;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int line1 = 2131427441;
+			
+			// aapt resource value: 0x7f0b0075
+			public const int line3 = 2131427445;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int linearAboutText = 2131427415;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int linearLayoutAphorism = 2131427429;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int linearLayoutCopyright = 2131427433;
 			
 			// aapt resource value: 0x7f0b0050
-			public const int linearLayoutAphorism = 2131427408;
+			public const int linearTopLogoWrapper = 2131427408;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int linearLayoutCopyright = 2131427412;
+			// aapt resource value: 0x7f0b0052
+			public const int linearVersionandCopyleft = 2131427410;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
@@ -1541,11 +1571,14 @@ namespace QOTD
 			// aapt resource value: 0x7f0b002a
 			public const int list_item = 2131427370;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int main_content = 2131427429;
+			// aapt resource value: 0x7f0b005f
+			public const int logoAzure = 2131427423;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int media_actions = 2131427418;
+			// aapt resource value: 0x7f0b007a
+			public const int main_content = 2131427450;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int media_actions = 2131427439;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int middle = 2131427349;
@@ -1574,8 +1607,8 @@ namespace QOTD
 			// aapt resource value: 0x7f0b003a
 			public const int radio = 2131427386;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int relativeLayoutMain = 2131427407;
+			// aapt resource value: 0x7f0b0063
+			public const int relativeLayoutMain = 2131427427;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int screen = 2131427359;
@@ -1640,35 +1673,38 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0022
 			public const int src_over = 2131427362;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int status_bar_latest_event_content = 2131427417;
+			// aapt resource value: 0x7f0b006e
+			public const int status_bar_latest_event_content = 2131427438;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int submit_area = 2131427403;
 			
+			// aapt resource value: 0x7f0b0061
+			public const int svLicense = 2131427425;
+			
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int text = 2131427425;
+			// aapt resource value: 0x7f0b0076
+			public const int text = 2131427446;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int text2 = 2131427423;
+			// aapt resource value: 0x7f0b0074
+			public const int text2 = 2131427444;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int textCopyright = 2131427414;
+			// aapt resource value: 0x7f0b006b
+			public const int textCopyright = 2131427435;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int textInstructions = 2131427413;
+			// aapt resource value: 0x7f0b006a
+			public const int textInstructions = 2131427434;
 			
 			// aapt resource value: 0x7f0b0033
 			public const int textSpacerNoButtons = 2131427379;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int textView1 = 2131427430;
+			// aapt resource value: 0x7f0b007b
+			public const int textView1 = 2131427451;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int time = 2131427421;
+			// aapt resource value: 0x7f0b0072
+			public const int time = 2131427442;
 			
 			// aapt resource value: 0x7f0b002c
 			public const int title = 2131427372;
@@ -1676,17 +1712,50 @@ namespace QOTD
 			// aapt resource value: 0x7f0b002f
 			public const int title_template = 2131427375;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int toolbar = 2131427428;
+			// aapt resource value: 0x7f0b0079
+			public const int toolbar = 2131427449;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int topPanel = 2131427374;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int txtAphorism = 2131427410;
+			// aapt resource value: 0x7f0b0055
+			public const int txtAboutCopyleft = 2131427413;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int txtAboutRights = 2131427414;
 			
 			// aapt resource value: 0x7f0b0053
-			public const int txtPersona = 2131427411;
+			public const int txtAboutTitle = 2131427411;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int txtAboutVersion = 2131427412;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int txtAphorism = 2131427431;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int txtCinzel = 2131427420;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int txtIcons = 2131427416;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int txtInfo = 2131427418;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int txtLicenseDetails = 2131427426;
+			
+			// aapt resource value: 0x7f0b005d
+			public const int txtOpenSans = 2131427421;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int txtPersona = 2131427432;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int txtQuill = 2131427417;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int txtTangerine = 2131427419;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -1820,49 +1889,55 @@ namespace QOTD
 			public const int abc_simple_dropdown_hint = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int main = 2130903065;
+			public const int about = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int notification_media_action = 2130903066;
+			public const int license = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int notification_media_cancel_action = 2130903067;
+			public const int main = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int notification_template_big_media = 2130903068;
+			public const int notification_media_action = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int notification_template_big_media_narrow = 2130903069;
+			public const int notification_media_cancel_action = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int notification_template_lines = 2130903070;
+			public const int notification_template_big_media = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int notification_template_media = 2130903071;
+			public const int notification_template_big_media_narrow = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int notification_template_part_chronometer = 2130903072;
+			public const int notification_template_lines = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_template_part_time = 2130903073;
+			public const int notification_template_media = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int second = 2130903074;
+			public const int notification_template_part_chronometer = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int select_dialog_item_material = 2130903075;
+			public const int notification_template_part_time = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int select_dialog_multichoice_material = 2130903076;
+			public const int second = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int select_dialog_singlechoice_material = 2130903077;
+			public const int select_dialog_item_material = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int support_simple_spinner_dropdown_item = 2130903078;
+			public const int select_dialog_multichoice_material = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int toolbar = 2130903079;
+			public const int select_dialog_singlechoice_material = 2130903079;
+			
+			// aapt resource value: 0x7f030028
+			public const int support_simple_spinner_dropdown_item = 2130903080;
+			
+			// aapt resource value: 0x7f030029
+			public const int toolbar = 2130903081;
 			
 			static Layout()
 			{
@@ -1931,14 +2006,47 @@ namespace QOTD
 			// aapt resource value: 0x7f050010
 			public const int abc_toolbar_collapse_description = 2131034128;
 			
+			// aapt resource value: 0x7f05001e
+			public const int about_license = 2131034142;
+			
+			// aapt resource value: 0x7f050016
+			public const int copyleft = 2131034134;
+			
 			// aapt resource value: 0x7f050014
 			public const int copyright = 2131034132;
+			
+			// aapt resource value: 0x7f05001c
+			public const int font_Cinzel = 2131034140;
+			
+			// aapt resource value: 0x7f05001d
+			public const int font_OpenSans = 2131034141;
+			
+			// aapt resource value: 0x7f05001b
+			public const int font_Tangerine = 2131034139;
+			
+			// aapt resource value: 0x7f05001a
+			public const int icon_info = 2131034138;
+			
+			// aapt resource value: 0x7f050019
+			public const int icon_quill = 2131034137;
+			
+			// aapt resource value: 0x7f050018
+			public const int icons = 2131034136;
+			
+			// aapt resource value: 0x7f05001f
+			public const int license_loader = 2131034143;
 			
 			// aapt resource value: 0x7f050013
 			public const int refresh = 2131034131;
 			
+			// aapt resource value: 0x7f050017
+			public const int rights = 2131034135;
+			
 			// aapt resource value: 0x7f050011
 			public const int status_bar_notification_info_overflow = 2131034129;
+			
+			// aapt resource value: 0x7f050015
+			public const int version = 2131034133;
 			
 			static String()
 			{

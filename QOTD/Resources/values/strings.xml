@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">QOTD</string>
+    <string name="ApplicationName">Quote of the Day</string>
     <string name="refresh">Tap anywhere for another</string>
     <string name="copyright">© 2014 - 2017 Saibal Ghosh</string>
+    <string name="version">Sagittarius (170523.0800)</string>
+    <string name="copyleft">© 2014 - 2017 Saibal Ghosh</string>
+    <string name="rights">All Rights Reserved</string>
+    <string name="icons">All icons are from flaticon.com</string>
+    <string name="icon_quill">Quill icon by Freepik [CC BY 3.0]</string>
+    <string name="icon_info">Info icon by Madebyoliver [CC BY 3.0]</string>
+    <string name="font_Tangerine">Tangerine by Toshi Omagari [OFL]</string>
+    <string name="font_Cinzel">Cinzel by Natanael Gama [OFL]</string>
+    <string name="font_OpenSans">Open Sans by Steve Matteson [Apache v 2.0]</string>
+    <string name="about_license">Legal Notices and Licenses</string>
+    <string name="license_loader">Loading license info...</string>
 </resources>

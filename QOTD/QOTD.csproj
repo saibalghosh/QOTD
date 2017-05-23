@@ -86,6 +86,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\toolbar.axml" />
+    <AndroidResource Include="Resources\layout\about.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\license.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <None Include="Web References\QOTDService\RandomQuotation.wsdl" />
     <None Include="Web References\QOTDService\RandomQuotation.xsd">
       <SubType>Designer</SubType>
@@ -111,6 +117,7 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\licenses.txt" />
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>
@@ -127,6 +134,8 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\info.png" />
     <AndroidResource Include="Resources\drawable\GradientBackground.xml" />
+    <AndroidResource Include="Resources\drawable\azure.png" />
+    <AndroidResource Include="Resources\drawable\transparent.png" />
     <None Include="Web References\QOTDService\RandomQuotation.disco" />
   </ItemGroup>
   <ItemGroup>

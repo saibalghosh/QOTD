@@ -10,12 +10,17 @@ using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Android.Net;
+using System.Threading;
+using Android.Content.Res;
+using System.Text;
+using System.IO;
 
 namespace QOTD
 {
     [Activity(MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : BaseActivity, View.IOnTouchListener
     {
+        View licenseDetails;
 
         private static readonly EndpointAddress endPoint = new EndpointAddress("https://qotdservice.azurewebsites.net/RandomQuotation.svc");
         private QOTDService.BasicHttpsBinding_IRandomQuotation serviceRef;
@@ -36,9 +41,104 @@ namespace QOTD
 
             SetupTypefaces();
 
+            ImageView vwInfo = FindViewById<ImageView>(Resource.Id.infoButton);
+            vwInfo.Click += VwInfo_Click;
+
             InitializeQOTDServiceClient();
             GetRandomQuotation();
         }
+
+        private void VwInfo_Click(object sender, EventArgs e)
+        {
+            View dialogAbout = this.LayoutInflater.Inflate(Resource.Layout.about, null);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.SetView(dialogAbout);
+
+            Button btnLicense = dialogAbout.FindViewById<Button>(Resource.Id.btnAboutLicenses);
+            btnLicense.Click += BtnLicense_Click;
+
+            TextView tvAboutHeader = dialogAbout.FindViewById<TextView>(Resource.Id.txtAboutTitle);
+            TextView tvAboutVersion = dialogAbout.FindViewById<TextView>(Resource.Id.txtAboutVersion);
+            TextView tvAboutCopyleft = dialogAbout.FindViewById<TextView>(Resource.Id.txtAboutCopyleft);
+            TextView tvAboutRights = dialogAbout.FindViewById<TextView>(Resource.Id.txtAboutRights);
+            TextView tvAboutIcons = dialogAbout.FindViewById<TextView>(Resource.Id.txtIcons);
+            TextView tvAboutQuill = dialogAbout.FindViewById<TextView>(Resource.Id.txtQuill);
+            TextView tvAboutInfo = dialogAbout.FindViewById<TextView>(Resource.Id.txtInfo);
+            TextView tvAboutTangerine = dialogAbout.FindViewById<TextView>(Resource.Id.txtTangerine);
+            TextView tvAboutCinzel = dialogAbout.FindViewById<TextView>(Resource.Id.txtCinzel);
+            TextView tvAboutOpenSans = dialogAbout.FindViewById<TextView>(Resource.Id.txtOpenSans);
+
+            Typeface tfAboutTitle = Typeface.CreateFromAsset(this.ApplicationContext.Assets, "fonts/Tangerine_Regular.ttf");
+            Typeface tfAboutTexts = Typeface.CreateFromAsset(this.ApplicationContext.Assets, "fonts/OpenSans-Regular.ttf");
+
+            tvAboutHeader.Typeface = tfAboutTitle;
+            tvAboutVersion.Typeface = tfAboutTexts;
+            tvAboutCopyleft.Typeface = tfAboutTexts;
+            tvAboutRights.Typeface = tfAboutTexts;
+            tvAboutIcons.Typeface = tfAboutTexts;
+            tvAboutQuill.Typeface = tfAboutTexts;
+            tvAboutInfo.Typeface = tfAboutTexts;
+            tvAboutTangerine.Typeface = tfAboutTexts;
+            tvAboutCinzel.Typeface = tfAboutTexts;
+            tvAboutOpenSans.Typeface = tfAboutTexts;
+
+            builder.SetPositiveButton("OK", HandleAboutDismissal);
+            builder.Show();
+        }
+
+        private void BtnLicense_Click(object sender, EventArgs e)
+        {
+            licenseDetails = this.LayoutInflater.Inflate(Resource.Layout.license, null);
+
+            Android.Support.V7.App.AlertDialog.Builder builder = new Android.Support.V7.App.AlertDialog.Builder(this);
+            builder.SetView(licenseDetails);
+
+            TextView tvLicenseDetails = licenseDetails.FindViewById<TextView>(Resource.Id.txtLicenseDetails);
+
+            RunOnUiThread(() => tvLicenseDetails.SetText(Resource.String.license_loader));
+
+
+            builder.SetTitle(Resource.String.about_license);
+            builder.SetPositiveButton("OK", HandleAboutDismissal);
+
+            builder.Create();
+            builder.Show();
+
+            ThreadPool.QueueUserWorkItem(o => RenderLicenseInfo());
+
+        }
+
+        private async void RenderLicenseInfo()
+        {
+            string licInfo;
+
+            licInfo = await ReadLicenseInfo();
+            TextView tvLicenseDetails = licenseDetails.FindViewById<TextView>(Resource.Id.txtLicenseDetails);
+            RunOnUiThread(() => tvLicenseDetails.Typeface = Typeface.Monospace);
+            RunOnUiThread(() => tvLicenseDetails.Text = "");
+            RunOnUiThread(() => tvLicenseDetails.Text = licInfo);
+
+        }
+
+        private async Task<String> ReadLicenseInfo()
+        {
+            AssetManager assets = this.Assets;
+            StringBuilder licenseInfo = new StringBuilder();
+
+            using (StreamReader sr = new StreamReader(assets.Open("licenses.txt")))
+            {
+                licenseInfo.Append(await sr.ReadToEndAsync());
+            }
+            return licenseInfo.ToString();
+        }
+
+
+        private void HandleAboutDismissal(object sender, EventArgs e)
+        {
+
+        }
+
 
         public bool OnTouch(View v, MotionEvent e)
         {

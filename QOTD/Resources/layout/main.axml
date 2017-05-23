@@ -6,8 +6,9 @@
     android:layout_height="fill_parent"
     android:background="@drawable/GradientBackground"
     android:id="@+id/relativeLayoutMain">
-<!-- <ImageButton
-        android:id="@+id/InfoButton"
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_alignParentRight="true"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:minWidth="32dp"
@@ -15,8 +16,8 @@
         android:maxWidth="32dp"
         android:maxHeight="32dp"
         android:src="@drawable/info"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp" /> -->
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
     <LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
