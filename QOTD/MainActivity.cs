@@ -1,19 +1,17 @@
 ﻿using System;
+using System.ServiceModel;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Threading;
+using System.Text;
+using System.IO;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Graphics;
-using System.ServiceModel;
-using System.Threading.Tasks;
-using System.Net.Http;
 using Android.Net;
-using System.Threading;
 using Android.Content.Res;
-using System.Text;
-using System.IO;
 
 namespace QOTD
 {

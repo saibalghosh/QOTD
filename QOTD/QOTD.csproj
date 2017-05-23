@@ -79,14 +79,7 @@
     <AndroidAsset Include="Assets\fonts\Cinzel-Regular.ttf" />
     <AndroidAsset Include="Assets\fonts\OpenSans-Regular.ttf" />
     <AndroidAsset Include="Assets\fonts\Tangerine_Regular.ttf" />
-    <AndroidAsset Include="Assets\fonts\Italianno-Regular.ttf" />
     <None Include="packages.config" />
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\second.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\layout\about.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -124,9 +117,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\values\colors.xml" />
-    <AndroidResource Include="Resources\values\dimens.xml" />
-    <AndroidResource Include="Resources\values\integers.xml" />
-    <AndroidResource Include="Resources\values\arrays.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />

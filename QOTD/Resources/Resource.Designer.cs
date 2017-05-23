@@ -71,22 +71,6 @@ namespace QOTD
 			}
 		}
 		
-		public partial class Array
-		{
-			
-			// aapt resource value: 0x7f0c0000
-			public const int sections = 2131492864;
-			
-			static Array()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Array()
-			{
-			}
-		}
-		
 		public partial class Attribute
 		{
 			
@@ -1164,9 +1148,6 @@ namespace QOTD
 			// aapt resource value: 0x7f060041
 			public const int disabled_alpha_material_light = 2131099713;
 			
-			// aapt resource value: 0x7f060045
-			public const int drawer_width = 2131099717;
-			
 			// aapt resource value: 0x7f060042
 			public const int notification_large_icon_height = 2131099714;
 			
@@ -1574,9 +1555,6 @@ namespace QOTD
 			// aapt resource value: 0x7f0b005f
 			public const int logoAzure = 2131427423;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int main_content = 2131427450;
-			
 			// aapt resource value: 0x7f0b006f
 			public const int media_actions = 2131427439;
 			
@@ -1700,9 +1678,6 @@ namespace QOTD
 			// aapt resource value: 0x7f0b0033
 			public const int textSpacerNoButtons = 2131427379;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int textView1 = 2131427451;
-			
 			// aapt resource value: 0x7f0b0072
 			public const int time = 2131427442;
 			
@@ -1711,9 +1686,6 @@ namespace QOTD
 			
 			// aapt resource value: 0x7f0b002f
 			public const int title_template = 2131427375;
-			
-			// aapt resource value: 0x7f0b0079
-			public const int toolbar = 2131427449;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int topPanel = 2131427374;
@@ -1793,9 +1765,6 @@ namespace QOTD
 			
 			// aapt resource value: 0x7f090003
 			public const int cancel_button_image_alpha = 2131296259;
-			
-			// aapt resource value: 0x7f090005
-			public const int item_columns = 2131296261;
 			
 			// aapt resource value: 0x7f090004
 			public const int status_bar_notification_info_maxnum = 2131296260;
@@ -1922,22 +1891,16 @@ namespace QOTD
 			public const int notification_template_part_time = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int second = 2130903076;
+			public const int select_dialog_item_material = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int select_dialog_item_material = 2130903077;
+			public const int select_dialog_multichoice_material = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int select_dialog_multichoice_material = 2130903078;
+			public const int select_dialog_singlechoice_material = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int select_dialog_singlechoice_material = 2130903079;
-			
-			// aapt resource value: 0x7f030028
-			public const int support_simple_spinner_dropdown_item = 2130903080;
-			
-			// aapt resource value: 0x7f030029
-			public const int toolbar = 2130903081;
+			public const int support_simple_spinner_dropdown_item = 2130903079;
 			
 			static Layout()
 			{
